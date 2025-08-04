@@ -1,70 +1,93 @@
+/* The general page style */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f0f0f0;
+  background: linear-gradient(145deg, #e12323, #b41717);
   margin: 0;
   padding: 40px 20px;
   text-align: center;
-  background: radial-gradient(circle at center, #e03030 0%, #b02020 100%);
   color: white;
 }
 
+/* The title */
 h1 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
+  font-size: 3rem;
   color: #fff100;
   text-shadow: 2px 2px 0 #000;
+  margin-bottom: 20px;
 }
 
+/* The input field */
 input[type="text"] {
-  padding: 10px;
-  width: 250px;
-  font-size: 1rem;
-  border-radius: 10px;
+  padding: 10px 15px;
+  font-size: 1.1rem;
+  border-radius: 12px;
   border: none;
   outline: none;
-  box-shadow: 0 0 5px #222 inset;
+  width: 240px;
+  box-shadow: 0 0 5px #333 inset;
 }
 
+/* Button style */
 button {
-  margin-left: 10px;
   padding: 10px 20px;
-  background-color: #ffcb05;
-  border: none;
-  border-radius: 10px;
+  margin-left: 10px;
+  font-size: 1.1rem;
+  background-color: #ffcc00;
   color: #2a75bb;
   font-weight: bold;
-  font-size: 1rem;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 2px 2px 0 #444;
   cursor: pointer;
-  box-shadow: 2px 2px 0 #333;
 }
 
 button:hover {
   background-color: #f5b800;
 }
 
+/* Pokémon data box styling */
 #pokemon-data {
   margin-top: 30px;
-  padding: 20px;
+  padding: 25px;
+  max-width: 420px;
   background-color: #ffffffdd;
-  border-radius: 15px;
-  max-width: 400px;
+  border-radius: 20px;
+  color: #333;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
   margin-left: auto;
   margin-right: auto;
-  color: #222;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
 }
 
 #pokemon-data img {
   width: 150px;
   height: 150px;
+  margin-bottom: 15px;
 }
 
-.pokedex-entry h2 {
-  color: #e03030;
+#pokemon-data h2 {
   margin-top: 0;
+  color: #d62828;
+  font-size: 1.8rem;
 }
 
-.pokedex-entry p {
+#pokemon-data p {
   font-size: 1.1rem;
   margin: 8px 0;
+}
+
+/* Footer styling */
+footer {
+  margin-top: 60px;
+  font-size: 0.9rem;
+  color: #eee;
+}
+
+footer a {
+  color: #fff100;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
